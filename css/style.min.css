@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
@@ -335,8 +342,8 @@ main {
     padding: 4px 12px;
     color: #fff;
     border-radius: 9px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ff1e41), to(#ff4f08));
     background-image: -o-linear-gradient(left, #ff1e41, #ff4f08);
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff1e41), to(#ff4f08));
     background-image: linear-gradient(to right, #ff1e41, #ff4f08)
 }
 
@@ -508,8 +515,8 @@ h1 {
     line-height: 0;
     color: #fff;
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.15);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff9c00), to(#ff8400));
     background-image: -o-linear-gradient(bottom, #ff9c00, #ff8400);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff9c00), to(#ff8400));
     background-image: linear-gradient(to top, #ff9c00, #ff8400);
 }
 
@@ -692,7 +699,8 @@ h1 {
     box-sizing: border-box;
   border-radius: 12px;
     background-color: #fff;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
 }
 
 .form-wrapper h3 {
@@ -877,7 +885,10 @@ h1 {
     font-weight: bold;
     color: #fff;
     border-radius: 50px;
-    box-shadow: 0px 3px 0 0 #eb7c02, inset 0px -1px 0 0 rgba(255, 255, 255, 0.15);
+    -webkit-box-shadow: 0px 3px 0 0 #eb7c02, inset 0px -1px 0 0 rgba(255, 255, 255, 0.15);
+            box-shadow: 0px 3px 0 0 #eb7c02, inset 0px -1px 0 0 rgba(255, 255, 255, 0.15);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff8400), to(#ff9c00));
+    background-image: -o-linear-gradient(bottom, #ff8400, #ff9c00);
     background-image: linear-gradient(to top, #ff8400, #ff9c00);
 }
 
@@ -929,7 +940,8 @@ h1 {
     text-align: center;
     padding: 0 18px;
     border-radius: 12px;
-    box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
     background-color: #ffffff;
 
 }
@@ -1091,7 +1103,8 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -1117,7 +1130,8 @@ h1 {
     padding: 10px;
     margin: 0;
     background-color: rgba(46, 53, 61, .9);
-    box-shadow: 3px 0 0 0 #ff9000;
+    -webkit-box-shadow: 3px 0 0 0 #ff9000;
+            box-shadow: 3px 0 0 0 #ff9000;
 }
 
 .s4-block-list .s4-list-item .s4-list-block-text {
@@ -1192,7 +1206,8 @@ h1 {
     margin-bottom: 40px;
 
     border-radius: 12px;
-    box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
     background-color: #ffffff;
 }
 
@@ -1202,9 +1217,14 @@ h1 {
 }
 
 .s5-item-block .s5-blc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .s5-item-block-left p {
@@ -1310,12 +1330,14 @@ h1 {
 .s7-item-list {
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0px 3px 0 0 #ff6e2e, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0px 3px 0 0 #ff6e2e, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 3px 0 0 #ff6e2e, 0 0 25px 0 rgba(0, 0, 0, 0.09);
     background-color: #fff;
 }
 
 .s7-item-list.two {
-    box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
 }
 
 .s7-item-list p {
@@ -1460,9 +1482,15 @@ h1 {
     width: 140px;
     height: 140px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     background-color: #86cc00;
 }
@@ -1516,9 +1544,15 @@ h1 {
 }
 
 .s10-inner-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 30px;
 }
 
@@ -1548,22 +1582,40 @@ h1 {
 }
 
 .s11-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .s11-item-list {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .s11-item-list .s11-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 24px;
     font-weight: 800;
     width: 30px;
@@ -1594,7 +1646,8 @@ h1 {
     padding: 100px 0 0 0;
     margin-bottom: 40px;
     border-radius: 12px;
-    box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
     background-color: #ffffff;
 }
 
@@ -1701,7 +1754,8 @@ h1 {
     padding-top: 0;
     height: 910px;
           border-radius: 12px;
-  box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 3px 0 0 #86cc00, 0 0 25px 0 rgba(0, 0, 0, 0.09);
   background-color: #ffffff;
 }
 
